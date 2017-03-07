@@ -111,7 +111,7 @@ z <- dat %>%
 
 ```
 
-# In der Nutuzng `W - Wohngebiet`
+# In der Nutzung `W - Wohngebiet`
 
 ```{r, fig.height=10, fig.width=12}
 
