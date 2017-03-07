@@ -102,7 +102,7 @@ z <- dat %>%
         summarise(count = n(),
                   q25 = quantile(BRW, 0.25, na.rm = TRUE),
                   q75 = quantile(BRW, 0.75, na.rm = TRUE),
-                  q95 = quantile(BRW, 0.75, na.rm = TRUE),
+                  q95 = quantile(BRW, 0.95, na.rm = TRUE),
                   iqr = IQR(BRW, na.rm = TRUE),
                   mean = mean(BRW, na.rm = TRUE),
                   med = median(BRW, na.rm = TRUE))  %>%
