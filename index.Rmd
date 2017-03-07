@@ -27,6 +27,8 @@ library("sp")
 library("ggplot2")
 suppressPackageStartupMessages(library("rgdal"))
 suppressPackageStartupMessages(library("dplyr"))
+library("leaflet")
+library("viridis")
 
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -146,5 +148,58 @@ p1 <- p1 + labs(x = "",
                 subtitle = "",
                 caption = "Quelle: FIS-Broker / Gutachterausschuss für Grundstückswerte in Berlin")
 p1
+```
+
+# Karte der Bodenrichtwerte im Jahr 2017 (BRW <= 8.000 €)
+
+```{r fig.height=15, fig.width=15}
+
+brw <- readOGR("./data/brw2017.shp", "brw2017", 
+               stringsAsFactors = FALSE, 
+               encoding = "UTF-8")
+
+brw <- brw[brw$BRW <= 8000, ]
+
+pal <- colorNumeric(
+  palette = viridis_pal()(10),
+  domain = brw@data$BRW
+)
+
+popup <- paste0("<b>", brw@data$spatial_al, " - ",
+                       brw@data$NUTZUNG , " - ",
+                       brw@data$GFZ, " - ", 
+                       brw@data$BRW, " Euro/qm")
+
+leafMap <- leaflet(height = "800px", width = "800px") %>%
+  setView(lng = 13.383, lat = 52.516, zoom = 11) %>%
+  addProviderTiles(providers$CartoDB.Positron) %>%
+  addPolygons(data = brw,
+              stroke = TRUE,
+              dashArray = 1,
+              weight = 1.5,
+              color = "white",
+              smoothFactor = 0.20,
+              fillOpacity = 0.60,
+              fillColor = ~pal(brw@data$BRW),
+              popup = popup,
+              group = "Bodenrichtwerte") %>%
+  addLegend("bottomright",
+            pal = pal,
+            values = brw@data$BRW,
+            title = "Euro/qm",
+            labFormat = labelFormat(suffix = " "),
+            opacity = 1)
+```
+
+```{r}
+
+leafMap
+
+```
+
+# Session Info
+
+```{r}
+devtools::session_info()
 ```
 
