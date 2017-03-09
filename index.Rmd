@@ -29,6 +29,7 @@ suppressPackageStartupMessages(library("rgdal"))
 suppressPackageStartupMessages(library("dplyr"))
 library("leaflet")
 library("viridis")
+library("scales")
 
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -194,6 +195,37 @@ leafMap <- leaflet(height = "800px", width = "800px") %>%
 ```{r}
 
 leafMap
+
+```
+
+# Verteilung der BRW nach GFZ
+
+Vorlage der Grafik ist [Mapping San Francisco home prices using R](http://urbanspatialanalysis.com/dataviz-tutorial-mapping-san-francisco-home-prices-using-r/ Grafik)
+
+WIP!
+
+```{r violin_plot, fig.height=10, fig.width=12}
+
+p1 <- filter(dat, 
+             NUTZUNG == "W - Wohngebiet", 
+             GFZ %in% c(0.4, 1, 1.2, 2.5) )
+
+p1 <- p1[which(p1$BRW < mean(p1$BRW) + (2.5 * sd(p1$BRW))), ]
+
+brw_violin <- ggplot(p1, aes(x=factor(year), y=BRW, fill=factor(year))) + 
+              geom_violin(color = "grey50") +
+              stat_summary(fun.y=mean, geom="point", size=2, colour="white") +
+              stat_summary(fun.y=median, geom="point", size=2, colour="red") + 
+              facet_wrap( ~ GFZ, ncol = 2, scales = "free") + 
+              theme(legend.position="none") +
+              scale_y_continuous(labels = comma) +
+              labs(x="Jahr (2009+2010 fehlen!)",
+                   y="Bodenrichtwert(€)",
+                   title="Verteilung der Bodenrichtwerte (W-Wohngebiet) nach ausgewählter GFZ",
+                   subtitle="Nominal prices (2006 - 2017); BRW means visualized as points, median in red",
+                   caption="Quelle: FIS-Broker / Gutachterausschuss für Grundstückswerte in Berlin")
+
+brw_violin
 
 ```
 
