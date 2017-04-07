@@ -97,7 +97,7 @@ read_brw <- function() {
 
 ```
 
-# Erstellen der Shapefiles aus den XML Dateien
+# Import der Shapefiles
 
 ```{r build_shp, eval = TRUE}
 
