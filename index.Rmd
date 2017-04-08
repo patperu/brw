@@ -73,10 +73,6 @@ get_xml <- function(years) {
 
 }
 
-```
-
-```{r read_shp}
-
 read_brw <- function() {
 
   files <- dir("./data/", pattern = ".shp", full.names = TRUE)
@@ -97,11 +93,15 @@ read_brw <- function() {
 
 ```
 
-# Import der Shapefiles
-
-```{r build_shp, eval = TRUE}
+```{r build_shp, eval = FALSE}
 
 microbenchmark::microbenchmark(get_xml(2002:2017), times = 1L)
+
+```
+
+# Import der Shapefiles
+
+```{r read_shp, eval = TRUE}
 
 dat <- read_brw()
 

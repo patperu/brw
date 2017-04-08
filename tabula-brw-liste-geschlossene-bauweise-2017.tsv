@@ -1,0 +1,443 @@
+GFZ	0,7												
+1032		18/19	Lichtenberg	Friedrichsfelde	Alt-Friedrichsfelde / Marzahner Chaussee	E	W	0,7	200	W	0,7	260	
+2352		32, 33	Treptow-Köpenick	Niederschöneweide	südl. Köllnische Str./ Grimaustr.		W	0,7	220	W	0,7	280	
+2353		32/33	Treptow-Köpenick	Niederschöneweide	nördl. Oberspreestr./ Johanna-Tesch-Str.		W	0,7	220	W	0,7	280	
+1067		25	Treptow-Köpenick	Alt-Treptow	Rinkartstr. / Heidekampweg / südl.S-	M	W	0,7	260	W	0,7	300	
+""					Bahnbogen Köllnische Heide								
+1002		9	Spandau	Hakenfelde	Hakenfelde / Cautiusstr. / Waldürner Weg	M	W	0,7	260	W	0,7	300	
+1086		25	Treptow-Köpenick	Plänterwald	Köpenicker Landstraße / nördl. S-Bahnbogen	M	W	0,7	260	W	0,7	300	
+""					Köllnische Heide								
+1057		32	Treptow-Köpenick	Johannisthal	Groß-Berliner-Damm / Hagedornstr.	M	W	0,7	260	W	0,7	300	
+1051		32	Treptow-Köpenick	Johannisthal	Sterndamm / Springbornstr.	M	W	0,7	260	W	0,7	300	
+2286		15	Spandau	Wilhelmstadt	nördl. Seeburger Str./westl. Johannastr.	E	W	0,7	300	W	0,7	350	
+GFZ	0,8												
+2402		32/ 33	Treptow Köpenick -	Altglienicke	Dorotheastr / Rapunzelstr . .		W	0 8 ,	0	W	0 8 ,	280	neue BRW-Zone, vorher 1049
+1093		40	Treptow-Köpenick	Altglienicke	an der Schönefelder Chaussee (westl.)	M	W	0,8	220	W	0,8	280	
+2287	41	Treptow-Köpenick	Bohnsdorf am S-Bhf. Altglienicke/Bohnsdorfer		M	W	0,8	220	W	0,8	260	
+""			Kirchsteig/Am Gartenstadtweg									
+1104	40/41	Treptow-Köpenick	Altglienicke an der Schönefelder Chaussee / südl. der		M	W	0,8	220	W	0,8	280	
+""			Warnowstr.									
+1111	40/41	Treptow-Köpenick	Altglienicke an der Schönefelder Chaussee / nördl. des		M	W	0,8	220	W	0,8	280	
+""			Dankmarsteigs									
+1177	19	Marzahn-Hellersdorf	Mahlsdorf Hönower Str.		E	W	0,8	260	W	0,8	350	
+1152	25	Lichtenberg	Karlshorst Ehrlichstr. / Liepnitzstr.		E/M	W	0 8 ,	260	W	0 8 ,	400	Änderung der BRW-Zone
+1181	26	Marzahn-Hellersdorf	Mahlsdorf Hultschiner Damm		E	W	0,8	260	W	0,8	350	
+2068	31/32	Neukölln	Britz Bruno-Taut-Ring		E	W	0,8	270	W	0,8	350	
+2067	31/32	Neukölln	Britz Neumarkplan		E	W	0,8	270	W	0,8	350	
+1201	33	Treptow-Köpenick	Adlershof Neltestr. / Vogelbeerstr.		M	W	0,8	270	W	0,8	350	
+1196	33	Treptow-Köpenick	Adlershof Wassermannstr. / Radickestr. / Büchnerweg		M	W	0,8	270	W	0,8	350	
+1029	14	Spandau	Staaken Heerstr. / Nennhauser Damm / Bergstr.		E	W	0 8 ,	270	W	0 8 ,	350	Änderung der BRW-Zone, BRW-
+""												Zone 1508 geht in den Doppelwert
+1545												auf.
+1014	31/32	Neukölln	Britz Gutschmidtstr. / Martin-Wagner-Ring		M/E	W	0,8	270	W	0,8	350	
+1206	32	Treptow-Köpenick	Johannisthal Sterndamm / Winckelmannstr.		M	W	0,8	270	W	0,8	350	
+1234	6/7/11	Pankow	Französisch Pasewalker Str. / Berliner Str. / Hauptstr. /		G/M	W	0,8	280	W	0,8	350	
+1659			Buchholz Chamissostr. / Bahnhofstr. / Pankstr.									
+1244	11	Pankow	Niederschönhausen Straße vor Schönholz		G	W	0,8	300	W	0,8	350	
+2386		3	Pankow	Buch	südl. Zepernicker Str.		W	0,8	300	W	0,8	400
+1248		6	Pankow	Rosenthal	An der Kastanienallee	G	W	0,8	300	W	0,8	400
+2375		3	Pankow	Buch	östl. Wiltberstraße		W	0,8	300	W	0,8	400
+1253		34	Treptow-Köpenick	Friedrichshagen	Müggelseedamm	G	W	0,8	310	W	0,8	400
+1262		11	Pankow	Prenzlauer Berg	südl. Esplanade	E/G	W	0,8	310	W	0,8	450
+1223		41	Treptow-Köpenick	Grünau	Regattastr. / Büxensteinallee	G	W	0,8	340	W	0,8	450
+1048		31	Steglitz-Zehlendorf	Lankwitz	Alt-Lankwitz / Kamenzer Damm	M	W	0,8	390	W	0,8	500
+1063		38	Steglitz-Zehlendorf	Lichterfelde	Osdorfer Str. / Scheelestr.	M	W	0,8	390	W	0,8	500
+2236		17	Mitte	Tiergarten	zw. Köbisstr. und Tiergartenstr.	G	W	0,8	2.300	W	0,8	3.500
+GFZ	0,9											
+1076		15	Spandau	Wilhelmstadt	nördl. Seeburger Str.	E	W	0,9	300	W	0,9	400
+GFZ	1,0											
+1380		18	Lichtenberg	Lichtenberg	westl. Rhinstr. und Krankenhaus	E	W	1,0	200	W	1,0	260
+2191		41	Treptow-Köpenick	Altglienicke	südl. S-Bahnhof	M	W	1,0	210	W	1,0	270
+""					Grünbergallee/nördl.Schnellstr.							
+1290		41	Treptow-Köpenick	Altglienicke	Siedlung Falkenhöhe	M	W	1,0	210	W	1,0	270
+1283	40/41	Treptow-Köpenick	Altglienicke Schönefelder Chaussee / Venusstr.		E/M	W	1,0	210	W	1,0	270	
+1342	19	Marzahn-Hellersdorf	Biesdorf Buckower Ring		M	W	1,0	220	W	1,0	280	
+1322	13	Marzahn-Hellersdorf	Marzahn Geraer Ring / Dessauer Str.		E	W	1,0	220	W	1,0	280	
+2134	7	Pankow	Karow Pfannschmidtstr. / Busonistr. /		M/E	W	1,0	220	W	1,0	300	
+""			Münchehagenstr. (Karow Nord)									
+1349	13	Marzahn-Hellersdorf	Marzahn Havemannstr. / Schorfheidestr.		E	W	1,0	220	W	1,0	280	
+1334	13,19	Marzahn-Hellersdorf	Marzahn Mehrower Allee / Raoul-Wallenberg-Str. /		E/M	W	1,0	220	W	1,0	280	
+""			Allee der Kosmonauten									
+1350	12/13	Lichtenberg	Neu- Falkenberger Chaussee / Zingster Str. /		M	W	1,0	220	W	1,0	280	
+""			Hohenschönhausen Biesenbrower Str./Malchower Weg /									
+""			Drossinger Str.									
+1309	3/7	Pankow	Buch Karower Chaussee		E	W	1,0	220	W	1,0	280	
+1360	13,19,20	Marzahn-Hellersdorf	Hellersdorf Zossener Str. / Alte Hellersdorfer Str . /		M	W	1 0 ,	220	W	1 0 ,	280	Änderung der BRW-Zone
+""			Hellersdorfer Str. / Risaer Str.									
+1378	33	Treptow-Köpenick	Köpenick südl. Müggelheimer Damm		M	W	1,0	220	W	1,0	300	
+1366	33	Treptow-Köpenick	Köpenick Müggelschlößchenweg		M	W	1,0	220	W	1,0	300	
+2351	18/25	Lichtenberg	Rummelsburg südl. Nöldnerstr./S-Bahn Rummelsburg			W	1,0	230	W	1,0	300	
+1390	33	Treptow-Köpenick	Köpenick Allendeviertel		M	W	1,0	260	W	1,0	350	
+1081	40	Neukölln	Rudow Schönefelder Str. / Waltersdorfer Ch. /		M	W	1,0	260	W	1,0	350	
+""			Rudower Felder									
+1426	18	Lichtenberg	Fennpfuhl Karl-Lade-Str. / Erich-Kuttner-Str.		M	W	1,0	260	W	1,0	400	
+1416	18	Lichtenberg	Friedrichsfelde	Alt-Friedrichsfelde / Rosenfelder Ring E/M		W	1,0	260	W	1 0 ,		400	Änderung der BRW-Zone
+1414	18	Lichtenberg	Fennpfuhl	Landsberger Allee / Hohenschönhauser Str. M		W	1,0	260	W	1,0		400	
+1116	10	Reinickendorf	Reinickendorf	nördl. Kurt-Schumacher Damm E		W	1,0	270	W	1,0		350	
+1089	10	Mitte	Wedding	Cambridger Str. / Belfaster Str. E		W	1,0	270	W	1,0		400	
+1110	10	Mitte	Wedding	Cité Joffre E		W	1,0	270	W	1,0		350	
+1461	18/25	Lichtenberg	Friedrichsfelde	südl. Rummelsburger Str. / Sewanstr. M		W	1,0	270	W	1,0		350	
+1397	33	Treptow-Köpenick	Köpenick	Wendenschloßstr. / Grüne Trift / Zur M		W	1,0	270	W	1,0		350	
+""				Nachtheide									
+1399	34	Treptow-Köpenick	Friedrichshagen	Fürstenwalder Damm / Peter-Hille-Str. / M/G		W	1,0	290	W	1,0		350	
+2303				Assmannstr. / Bruno-Wille-Str.									
+2165	19	Marzahn Hellersdorf -	Biesdorf	südlich Weißenhöher Str , östlich E		W	1 0 ,	290	W	1 0 ,		350	Änderung der BRW-Zone
+""				Grabensprung.									
+1407	6	Pankow	Französisch	Rosenthaler Weg / Triftstr. / Blankenfelder Str. E/M		W	1,0	290	W	1,0		350	
+1674			Buchholz										
+2237	34	Treptow-Köpenick	Friedrichshagen	nördl. Werlseestr. M/G		W	1,0	290	W	1,0		350	
+1451	25/26	Lichtenberg	Karlshorst	Sangeallee / Dönhoffstr. / Ehrenfelsstr. M/G		W	1,0	300	W	1,0		500	
+1447	12/18	Lichtenberg	Alt-	Hauptstr. / Gehrenseestr. M		W	1,0	300	W	1,0		400	
+""			Hohenschönhausen										
+1440	12	Lichtenberg	Alt-	Degner Str. / Gembitzer Str. M		W	1,0	300	W	1,0		400	
+""			Hohenschönhausen										
+1454	33	Treptow-Köpenick	Köpenick	Oberspreestr. / Glienicker Str. / Köllnische M/E		W	1,0	330	W	1,0		400	
+2304	26/33	Treptow-Köpenick	Köpenick Gehsener Str / Mahlsdorfer Str .	.			M	W	1 0 ,		330	W	1 0 ,		400	Änderung der BRW-Zone
+1127	10	Reinickendorf	Wittenau Eichborndamm / Windhalmweg				M	W	1,0		330	W	1,0		400	
+1501	18/25	Lichtenberg	Friedrichsfelde nördl. Rummelsburger Str. / Zachertstr.				M/E	W	1,0		330	W	1,0		450	
+1511	11	Pankow	Pankow Arnold-Zweig-Str. / Neumannstr.				M/E	W	1,0		340	W	1,0		550	
+2058	12/18	Pankow	Weißensee Otto-Brahm-Str.				M	W	1,0		340	W	1,0		550	
+1495	11,12	Pankow	Heinersdorf Romain-Rolland-Str./Berliner Str.				M	W	1,0		340	W	1,0		450	
+1478	18	Lichtenberg	Alt- Genslerstr. / Altenhofer Str. / Biesensthaler				E/M	W	1,0		340	W	1,0		450	
+""			Hohenschönhausen Str.													
+1471	11	Pankow	Pankow Prenzlauer Chaussee / Galenusstr.				M	W	1,0		340	W	1,0		550	
+1490	11/12	Pankow	Weißensee Pistoriusstr. / Gäblerstr./ Frieda - Seidlitz -				M	W	1,0		340	W	1,0		550	
+""			Straße													
+1621	9	Spandau	Hakenfelde Schäferstr.				E	W	1,0		350	W	1,0		450	
+1182	39	Tempelhof-	Lichtenrade Bornhagenweg				M/E	W	1,0		350	W	1,0		450	
+""		Schöneberg														
+1337	30	Steglitz-Zehlendorf	Lichterfelde Telefunkenkaserne, nördl. Goerzallee				M	W	1,0		350	W	1,0		500	
+1312	15	Spandau	Spandau Altonaer Str. / Grünhofer Weg				E	W	1,0		350	W	1,0		450	
+2167	9	Spandau	Haselhorst Ruppiner-See-Str. / nördl. Rhenaniastr.					W	1,0		350	W	1,0		450	
+1523	11	Pankow	Niederschönhausen Rolandstr. / Schloßallee				M	W	1,0		350	W	1,0		600	
+2238	8/9	Spandau	Falkenhagener Feld südl. Griesinger Str.		W	1,0	350	W	1,0	450	Änderung der BRW-Zone
+1160	9/15	Spandau	Falkenhagener Feld Falkenhagener Feld	M	W	1,0	350	W	1,0	450	
+1167	24	Tempelhof-	Tempelhof Oberlandstr. / Schaffhausener Str. /	M	W	1,0	350	W	1,0	450	
+""		Schöneberg	Holzmannstr.								
+1190	39	Tempelhof-	Lichtenrade Lichtenrader Damm / John-Locke-Str.	M	W	1,0	350	W	1,0	450	
+""		Schöneberg									
+1171	39	Tempelhof-	Lichtenrade Nahariyastr. / Skarbinastr.	E	W	1,0	350	W	1,0	450	
+""		Schöneberg									
+1302	15	Spandau	Wilhelmstadt Jordanstr.	E	W	1,0	350	W	1,0	450	
+1487	33	Treptow-Köpenick	Köpenick Wendenschloßstr. / Dregerhoffstr.	M	W	1,0	350	W	1,0	500	
+1482	33	Treptow-Köpenick	Köpenick Wendenschloßstr. / Segewaldweg	M	W	1,0	350	W	1,0	500	
+1202	32	Neukölln	Gropiusstadt Gropiusstadt	E	W	1,0	350	W	1,0	450	
+1210	5, 6	Reinickendorf	Märkisches Viertel Märkisches Viertel	M	W	1,0	350	W	1,0	450	
+1219	30	Steglitz-Zehlendorf	Lichterfelde Goerzallee, gegenüber Parkfriedhof	E	W	1,0	350	W	1,0	500	
+""			Lichterfelde								
+1257	15	Spandau	Falkenhagener Feld An der Kappe / Borkzeile	M	W	1,0	350	W	1,0	450	
+1284	15	Spandau	Wilhelmstadt Sandstr. / Gruberzeile	E	W	1,0	350	W	1,0	450	
+1298	15	Spandau	Wilhelmstadt Gatower Str. / Graetschelsteig / Am	E	W	1,0	350	W	1,0	450	
+""			Omnibusbahnhof								
+1266	9	Spandau	Hakenfelde Streitstr. / Hakenfelde	M	W	1,0	360	W	1 0 ,	450	Änderung der BRW-Zone
+2278	10, 11	Mitte	Wedding Themsestr./ Schwyzer Str		M/E	W	1,0	360	W	1,0	500	
+1505	12/18	Pankow	Weißensee Falkenberger Str. / Hansastr.		M	W	1,0	370	W	1,0	600	Änderung der BRW-Zone, s. 1516
+1527												
+1428	10	Reinickendorf	Reinickendorf Kienhorststr. / Auguste-Viktoria-Allee /		E	W	1,0	380	W	1,0	500	
+""			Scharnweberstr.									
+1525	11	Pankow	Pankow Stiftsweg / Bleicheroder Str.		M	W	1,0	380	W	1,0	650	
+1534	11	Pankow	Pankow Kissingenplatz / Gemündener Str.		M	W	1,0	380	W	1,0	650	
+1536	11	Pankow	Pankow Tiroler Str. / Brixener Str.		M/E	W	1,0	380	W	1,0	650	
+1417	25	Neukölln	Neukölln Dammweg/Aronstr.		E	W	1,0	380	W	1,0	500	
+1270	9	Spandau	Hakenfelde Cautiusstr. / Am Forstacker		M	W	1,0	380	W	1,0	500	
+1325	9/15	Spandau	Haselhorst Gartenfelder Str. / Haselhorster Damm		E	W	1,0	380	W	1,0	500	
+2227	9	Spandau	Haselhorst Rhenaniastr. / Daumstr.		E	W	1,0	380	W	1,0	500	
+2228												
+1328	10/16	Spandau	Siemensstadt Rohrdamm / Rieppelstr.		M/E	W	1,0	380	W	1,0	500	
+1281	9	Spandau	Falkenhagener Feld Wasserwerkstr .		M	W	1 0 ,	380	W	1 0 ,	500	Änderung der BRW-Zone
+1339	14/15	Spandau	Staaken beiders. Brunsbütteler Damm		E	W	1,0	380	W	1,0	500	
+2290	31	Neukölln	Buckow Rufacher Weg		E	W	1,0	390	W	1,0	500	
+1547	6/11	Pankow	Niederschönhausen beiders. Dietzgenstr. / um Pastor-Niemöller-		G/E	W	1,0	390	W	1,0	650	
+1627			Platz/Nordendstr. / Bauernwiesen									
+1353	25/31/32	Neukölln	Britz	Jahnstr. / Britzer Damm / Holzmindener Str. /	M/E	W	1,0	390	W	1,0	500	
+""				Franz-Körner-Str.								
+1358	31	Neukölln	Britz	Britzer Damm / Koppelweg	E/M	W	1,0	390	W	1,0	500	
+1370	31/32/39	Neukölln	Buckow	Buckower Damm / Gerlinger Str. / Christoph-	E	W	1,0	390	W	1,0	500	
+""				Ruden-Str.								
+2208	18	Pankow	Prenzlauer Berg	Eldenaer Str./ENT Alter Schlachthof	M/E	W	1,0	390	W	1,0	700	
+2199												
+1373	39	Neukölln	Buckow	Gerlinger Str. / Ernst-Arndt-Weg	E	W	1,0	390	W	1,0	500	
+1391	10	Mitte	Wedding	Windhuker Str. / Togostr.	E	W	1,0	390	W	1,0	550	
+1387	32	Neukölln	Britz	Buschkrugallee / Rudower Str.	E/M	W	1,0	390	W	1,0	500	
+2289	31/39	Neukölln	Buckow	Tropfsteinweg/Sandsteinweg/Marienf. Ch.	M/E	W	1,0	390	W	1,0	500	
+1344	31/39	Tempelhof-	Lichtenrade	Richard-Tauber-Damm / Föttinger Zeile	E	W	1,0	390	W	1,0	500	
+""		Schöneberg										
+1473	10	Reinickendorf	Tegel	Bernauer Str. / Stockumer Str.	M	W	1,0	400	W	1,0	500	
+1477	24	Tempelhof-	Tempelhof	Hoeppnerstr. / Hessenring	M	W	1,0	400	W	1,0	600	
+""		Schöneberg										
+1483	24/31	Tempelhof-	Tempelhof	Alboinstr. / Bosestr. / Wittekindstr.	M	W	1,0	400	W	1,0	600	
+""		Schöneberg										
+1489	31	Tempelhof-	Mariendorf	Mariendorfer Damm / Kurfürstenstr. /	E/M	W	1,0	400	W	1,0	500	
+""		Schöneberg		Eisenacher Str. / Dardanellenweg								
+2202	9	Spandau	Hakenfelde	nördl. /südl. Nordhafen/ östl. Streitstr.	M/E	W	1,0	400	W	1,0	500	
+1516	12/18	Lichtenberg	Alt -	Orankestr .	M	W	1 0 ,	400	W	1 0 ,	0	BRW-Zone entfällt und geht in
+1437	10	Reinickendorf	Wittenau	Oranienburger Str. / Blunckstr.	M	W	1,0	400	W	1,0	500
+1398	30/38	Steglitz-Zehlendorf	Lichterfelde	Ostpreußendamm	M	W	1,0	400	W	1,0	550
+1405	30	Steglitz-Zehlendorf	Lichterfelde	Goerzallee / Ortlerweg	M	W	1,0	400	W	1,0	550
+1413	31	Tempelhof-	Mariendorf	beiders. Tauernallee	M	W	1,0	400	W	1,0	500
+""		Schöneberg									
+1432	5	Reinickendorf	Waidmannslust	Schluchseestr. / Titiseestr.	M	W	1,0	400	W	1,0	500
+1465	10,11	Reinickendorf	Reinickendorf	Lindauer Allee / Emmentaler Str. /	E	W	1,0	400	W	1,0	500
+""				Reginhardstr.							
+1441	5	Reinickendorf	Wittenau	Bernshausener Ring	E	W	1,0	400	W	1,0	500
+1444	10	Reinickendorf	Reinickendorf	Waldstr. / Siedelmeisterweg	E	W	1,0	400	W	1,0	500
+1448	5	Reinickendorf	Wittenau	Cyclopstr.	M	W	1,0	400	W	1,0	500
+1456	25	Neukölln	Neukölln	Neuköllnische Allee / Sonnenallee	E	W	1,0	400	W	1,0	500
+1464	5,10	Reinickendorf	Borsigwalde	Gorkistr. / Ernststr. / Ziekowstr.	E/M	W	1,0	400	W	1,0	500
+1541	6/11	Pankow	Rosenthal	Lessingstr. / Uhlandstr. / Kopenhagener Str.	G/M	W	1,0	400	W	1,0	450
+1618											
+2087	25	Lichtenberg	Rummelsburg	südl. Hauptstr. - bis zur		W	1,0	420	W	1,0	650
+""				Untersuchungsanstalt -							
+1491	38	Steglitz-Zehlendorf	Zehlendorf	Windsteiner Weg / Zehlendorf Süd	M	W	1,0	420	W	1,0	550
+1499	16	Charlottenburg-	Charlottenburg	Heilmannring / Paul-Hertz-Siedlung /	M/E	W	1,0	420	W	1,0	550
+""		Wilmersdorf		Charlottenburg-Nord							
+1515	31	Steglitz-Zehlendorf	Steglitz	Steglitzer Damm / Kelchstr.	M	W	1,0	520	W	1,0	650
+1546	30	Steglitz-Zehlendorf	Lichterfelde	Hindenburgdamm / Moltkestr.	G	W	1,0	550	W	1,0	700
+1510	30	Steglitz-Zehlendorf	Lichterfelde	Hindenburgdamm / Krahmerstr.	G	W	1,0	550	W	1,0	700
+1085	25	Friedrichshain-	Friedrichshain	Alt-Stralau / Tunnelstr.	G/M	W	1,0	560	W	1,0	1.000
+""		Kreuzberg									
+1504	5,10	Reinickendorf	Tegel	Am Tegeler Hafen	G	W	1,0	570	W	1,0	800
+1533	30	Steglitz-Zehlendorf	Steglitz	Neue Filandastr.	G/M	W	1,0	590	W	1,0	900
+1544	30/31	Steglitz-Zehlendorf	Lankwitz	Kaiser-Wilhelm-Str. / Gallwitzallee /	M	W	1,0	590	W	1,0	750
+""				Malteserstr.							
+1520	30	Steglitz-Zehlendorf	Lichterfelde	Morgensternstr.	G/M	W	1,0	620	W	1,0	800
+2070	30	Steglitz-Zehlendorf	Steglitz	Am Stadtpark / Orleansstr.	M	W	1,0	620	W	1,0	800
+2069	30	Steglitz-Zehlendorf	Steglitz	südl. Birkbuschstr. / Am Bäkepark	M	W	1,0	620	W	1,0	800
+1538	30	Steglitz-Zehlendorf	Zehlendorf	Berliner Str. / Mörchinger Str.	M	W	1,0	620	W	1,0	800
+1559	30	Steglitz-Zehlendorf	Lichterfelde	Margaretenstr. / Hortensienstr.	G	W	1,0	700	W	1,0	900
+1562	30	Steglitz-Zehlendorf	Lichterfelde	Marschnerstr.	G	W	1,0	700	W	1,0	900
+1551	29/30	Steglitz-Zehlendorf	Zehlendorf	Argentinische Allee	G	W	1,0	730	W	1,0	950
+1566	30	Steglitz-Zehlendorf	Zehlendorf	Clayallee / Martin-Buber-Str.	G	W	1,0	730	W	1,0	950
+1571		23/30	Steglitz-Zehlendorf	Steglitz	Brentanostr. / Paulsenstr. / Grillparzerstr.	G	W	1,0	900	W	1,0	1.200	
+1762													
+1578		16	Charlottenburg-	Westend	westl. Preußenallee	G	W	1,0	940	W	1,0	1.200	
+""			Wilmersdorf										
+2389		15	Charlottenburg-	Westend	zw. Glockenturmstr./ Schirwindter Allee		W	1,0	940	W	1,0	1.200	
+""			Wilmersdorf										
+1588		23	Charlottenburg-	Schmargendorf	Elsterplatz / Reichenhaller Str. /	G	W	1,0	980	W	1,0	1.300	
+""			Wilmersdorf		Heiligendammer Str.								
+1581		16/17	Mitte	Hansaviertel	Klopstockstr. / Bartningallee	G	W	1,0	1.200	W	1,0	2.000	
+1593		29	Steglitz-Zehlendorf	Zehlendorf	Mexikoplatz	G	W	1,0	1.200	W	1,0	1.600	
+GFZ	1,2												
+1558		41	Treptow-Köpenick	Altglienicke	Siedlung Wegedorn	M	W	1,2	260	W	1,2	350	
+1597		9	Spandau	Hakenfelde	Aalemannufer / Hakenfelde	M	W	1,2	270	W	1,2	350	
+1554		19	Marzahn-Hellersdorf	Marzahn	östl. Blumberger Damm / nördl.Eisenacher	M	W	1,2	270	W	1,2	350	
+""					Str.								
+1629		30/38	Steglitz-Zehlendorf	Lichterfelde	Celsiusstr. / Fahrenheitstr. /	E	W	1,2	340	W	1,2	450	
+""					Thermometersiedlung								
+2388		12/18	Pankow	Prenzlauer Berg	nördl. Michelangelostr.		W	1,2	340	W	1,2	550	
+1603		39	Tempelhof -	Marienfelde	Hildburghauser Str /Tirschenreuther Ring .	M/E	W	1 2 ,	340	W	1 2 ,	450	Änderung der BRW-Zone
+""			Schöneberg										
+1144		18/19/25	Lichtenberg	Friedrichsfelde	Alt-Friedrichsfelde / Am Tierpark	E/M	W	1,2	340	W	1,2	450	
+1610		14	Spandau	Staaken	östl. Gärtnereiring	M	W	1,2	340	W	1,2	450	
+1606	10	Spandau	Siemensstadt	Saatwinkler Damm / Rohrdamm	E	W	1,2	380	W	1,2	500	
+1574	25/32	Treptow-Köpenick	Baumschulenweg	beiders. Baumschulenstr.	M	W	1,2	390	W	1,2	500	
+1587	18	Pankow	Prenzlauer Berg	Oleanderstr.	M	W	1,2	400	W	1,2	650	
+1560	12/18	Pankow	Prenzlauer Berg	Storkower Str. / südl. Michelangelostr.	M/E	W	1,2	400	W	1,2	650	
+1635	16	Spandau	Siemensstadt	Quellweg / Goebelstr .	M/E	W	1 2 ,	440	W	1 2 ,	550	Änderung der BRW-Zone
+1605	25	Treptow-Köpenick	Plänterwald	Am Treptower Park / Herkomerstr.	M	W	1,2	470	W	1,2	700	
+1217	33	Treptow-Köpenick	Grünau	Regattastr. / Lahmertstr.	G	W	1,2	500	W	1,2	650	
+1102	25	Friedrichshain-	Friedrichshain	Alt-Stralau / Krachtstr.	M/E	W	1,2	520	W	1,2	800	
+""		Kreuzberg										
+2089	25	Friedrichshain-	Friedrichshain	südl. Alt-Stralau	G	W	1,2	600	W	1,2	1.200	
+""		Kreuzberg										
+1636	16/17	Mitte	Hansaviertel	Lessingstr. / Flensburger Str.	G/M	W	1,2	650	W	1,2	1.000	
+1614	17	Mitte	Mitte	Karl-Marx-Allee / Berolinastr.	M	W	1,2	690	W	1,2	1.100	
+1641	16	Charlottenburg-	Westend	nördl. Steubenplatz / beiders. Reichsstraße	G	W	1,2	910	W	1,2	1.200	
+""		Wilmersdorf										
+1648	16	Charlottenburg-	Westend	südl. Steubenplatzes / beiders. Reichsstraße	G	W	1,2	1.100	W	1,2	1.800	
+""		Wilmersdorf										
+1650	17	Mitte	Tiergarten	Rauchstr. / südl. Thomas-Dehler-Str.	G	W	1,2	2.000	W	1,2	3.000	
+1268		18	Lichtenberg	Lichtenberg Frankfurter Allee / Schulze-Boysen-Str.		E/M	W	1,3	340	W	1,3	450	
+1665		15	Spandau	Staaken Obstallee		E	W	1,3	350	W	1,3	450	
+1035		18	Lichtenberg	Fennpfuhl Landsberger Allee / Karl-Lade-Str./ Storkower		M	W	1,3	350	W	1,3	450	
+""				Str.									
+1657		8/9	Spandau	Falkenhagener Feld Falkenseer Chaussee / Kraepelinweg		M	W	1,3	360	W	1,3	450	
+1660		9	Spandau	Falkenhagener Feld Im Spektefeld / Paul-Gerhardt-Ring		M	W	1,3	360	W	1,3	450	
+1671		31	Tempelhof-	Mariendorf Hundsteinweg / Hausstockweg		M	W	1,3	440	W	1,3	550	
+""			Schöneberg										
+1676		15	Charlottenburg-	Westend Glockenturmstr.		G	W	1,3	790	W	1,3	1.000	
+""			Wilmersdorf										
+GFZ	1,5												
+2397		24/31	Tempelhof-	Schöneberg nördl. Eythstr., westl. Bessemer Str.			W	1,5	0	W	1,5	900	neue BRW-Zone, vorher 1915 bzw.
+""			Schöneberg										1965
+1619		19	Lichtenberg	Friedrichsfelde Alt-Friedrichsfelde / Gensinger Str.		M	W	1,5	330	W	1,5	500	
+1681		40	Neukölln	Rudow Waltersdorfer Chaussee / Rudower Felder		M/E	W	1,5	340	W	1,5	500	
+1625		32	Treptow-Köpenick	Niederschöneweide Schnellerstr. / Fennstr.		E/M	W	1,5	350	W	1,5	550	
+2071		32	Treptow-Köpenick	Niederschöneweide Brückenstr.		E	W	1,5	350	W	1,5	550	
+2288		18	Lichtenberg	Lichtenberg Vulkanstr /Rutnikstr .		M/E	W	1 5 ,	350	W	1 5 ,	550	Änderung der BRW-Zone
+1626		33	Treptow-Köpenick	Köpenick Müggelheimer Str. / Luisenstr. /		M/E	W	1,5	350	W	1,5	550	
+""				Dorotheenstr. / Kietz									
+2291	25/26/32/33	Treptow-Köpenick	Oberschöneweide Wilhelminenhofstraße		M	W	1,5	350	W	1,5		550	
+2350	18/25	Lichtenberg	Rummelsburg nördl. Nöldnerstr./Tucholiaplatz			W	1,5	350	W	1,5		650	
+1685	39	Tempelhof-	Marienfelde Tirschenreuther Ring		E	W	1,5	380	W	1,5		600	
+""		Schöneberg											
+2211	33	Treptow-Köpenick	Köpenick Freiheit / Kirchstr. / Altstadt		M	W	1,5	390	W	1,5		650	
+1668	18	Lichtenberg	Alt- Ferdinand-Schultze-Str. / Arendsweg		M	W	1,5	400	W	1,5		600	
+""			Hohenschönhausen										
+1638	25/26/33	Treptow-Köpenick	Oberschöneweide An der Wuhlheide / Zeppelinstr. /		M/E	W	1,5	400	W	1,5		600	
+""			Weiskopfstr./nördl. Siemens-Allee, Tabbertstr.										
+1644	26/33	Treptow-Köpenick	Köpenick Mandrellaplatz/ Friedrichshagener Straße		M	W	1,5	430	W	1,5		650	
+1647	33	Treptow-Köpenick	Köpenick Flemmingstr. / Gutenbergstr. / Spindlersfeld		M	W	1,5	440	W	1,5		700	
+2060	9/15	Spandau	Haselhorst Pulvermühlenweg		M	W	1,5	460	W	1,5		750	
+2199	18	Pankow	Prenzlauer Berg Eldenaer Str./ENT Alter Schlachthof		M/E	W	1,5	490	W	1,5		800	
+2208													
+1654	11/12/18	Pankow	Weißensee westl. des Mirbachplatzes / Charlottenburger		E/M	W	1 5 ,	500	W	1 5 ,	1 000 .		Änderung der BRW-Zone
+""			Str. / Langhansstr										
+1701	11	Pankow	Niederschönhausen westl. Prenzlauer Chaussee / südl. Karower		M	W	1,5	510	W	1,5		800	
+""			Str. / Schloßallee										
+2169	15	Spandau	Wilhelmstadt südl. Heerstr. / Alt-Pichelsdorf		M	W	1,5	510	W	1,5		800	
+1661	12/18	Lichtenberg	Alt- Konrad-Wolf-Str. / Große-Leege-Str.		M	W	1,5	520	W	1,5		800	
+""			Hohenschönhausen										
+1695	11	Pankow	Pankow Berliner Str. / Borkumstr.		M	W	1,5	520	W	1,5		800	
+1670		33/41	Treptow-Köpenick	Grünau Regattastr.		M	W	1,5	520	W	1,5	800	
+1683		11,12,17,18	Pankow	Prenzlauer Berg Ostseestr. / Erich-Weinert-Str.		E/M	W	1,5	550	W	1,5	1.000	
+2292		12/18	Pankow	Weißensee Bizetstr./ Herbert-Braun-Str.		M	W	1,5	550	W	1,5	1.200	
+1691		15	Spandau	Spandau Kolk		M	W	1,5	600	W	1,5	900	
+1692		6/11	Pankow	Niederschönhausen Dietzgenstr.		G	W	1,5	630	W	1,5	1.000	
+1675		12	Pankow	Weißensee östl. des Mirbachplatzes / Parkstraße		M/G	W	1,5	630	W	1,5	1.200	
+1688		17/18	Pankow	Prenzlauer Berg Anton-Saefkow-Str. / Artur-Becker-Str. / Paul-		E/M	W	1,5	700	W	1,5	1.400	
+""				Heyse-Str.									
+1694		17	Mitte	Moabit Heinrich-Zille-Siedlung		E	W	1,5	740	W	1,5	1.200	
+GFZ	1,6												
+1707		17	Mitte	Mitte Fischerinsel		M	W	1,6	900	W	1,6	1.800	
+GFZ	2,0												
+2399		23/30	Steglitz Zehlendorf -	Steglitz südl . S Bahntrasse - , Steglitzer Damm	,		W	2 0 ,	0	W	2 0 ,	1 700 .	neue BRW-Zone, vorher 2106
+""				Birkbuschstr.									
+2398		23/30	Steglitz Zehlendorf -	Steglitz nördl . S Bahntrasse - ., Schildhornstr	.,		W	2 0 ,	0	W	2 0 ,	1 900 .	neue BRW-Zone, vorher 2106
+""				Zimmermannstr.									
+1714		15	Spandau	Wilhelmstadt Pichelsdorfer Str. / Wilhelmstadt		E	W	2,0	400	W	2,0	650	
+1713		9/15	Spandau	Spandau Schönwalder Str. / Neustadt/Moritzstr. /		M	W	2,0	400	W	2,0	600	
+""				Münsinger Str.									
+1725	15	Spandau	Spandau	Stresowstr. / Plantage	E	W	2,0	400	W	2,0		600	
+1732	15	Spandau	Wilhelmstadt	Heidereuther Str. / Tiefwerderweg	E	W	2,0	400	W	2,0		600	
+1738	15	Spandau	Wilhelmstadt	Charlottenburger Ch. / Teltower Str.	E	W	2,0	400	W	2,0		600	
+1719	15	Spandau	Spandau	Seegefelder Str. / Wustermarker Str.	M	W	2,0	400	W	2,0		600	
+1741	16	Spandau	Siemensstadt	Nonnendammallee / Jugendweg	E	W	2,0	480	W	2,0		750	
+1723	18	Lichtenberg	Lichtenberg	Frankfurter Allee / Magdalenenstr.	E	W	2,0	500	W	2 0 ,		800	Änderung der BRW-Zone
+1703	24/25/31	Neukölln	Neukölln	Silbersteinstr. / Kranoldplatz /	E	W	2,0	530	W	2,0		900	
+""				Germaniapromenade / Karl-Elsasser-Str.									
+2390	11	Mitte	Gesundbrunnen	südl. Kühnemannstr./ Koloniestr.		W	2,0	570	W	2,0		900	
+1756	11	Mitte	Gesundbrunnen	Soldiner Str. / Wollankstr.	E	W	2,0	570	W	2,0		900	
+2107	10/11/17	Mitte	Wedding	Afrikanische Str . / Nachtigallplatz /	E	W	2 0 ,	590	W	2 0 ,	1 000 .		Änderung der BRW-Zone
+""				Transvaalstr. / Lüderitzstr. / Antwerpener Str.									
+""				/ Ostendener Str.									
+1712	25	Treptow-Köpenick	Alt-Treptow	Kiefholzstr. / Bouchéstr.	E/M	W	2,0	600	W	2,0	1.200		
+1740	18/25	Lichtenberg	Rummelsburg	westl. Marie-Curie-Allee / Rupprechtstr.	E	W	2,0	600	W	2,0	1.000		
+1716	25	Treptow-Köpenick	Alt-Treptow	Puschkinallee / Elsenstr.	E	W	2,0	600	W	2,0	1.200		
+1773	5/10	Reinickendorf	Tegel	beiders. Berliner Str.	G/M	W	2,0	690	W	2,0	1.100		
+1767	24/31	Tempelhof-	Tempelhof	Alt-Tempelhof / beiders. Tempelhofer Damm	M	W	2,0	700	W	2,0	1.100		
+""		Schöneberg											
+1728	11	Pankow	Pankow	Thulestr. / Spiekermannstr.		E/M	W	2,0	720	W	2,0	1.200	
+2086	25	Lichtenberg	Rummelsburg	südl. Hauptstr.		M	W	2,0	750	W	2,0	1.200	
+2088	25	Friedrichshain-	Friedrichshain	Friedrich-Junge-Str. / Fischzug		M	W	2,0	780	W	2,0	1.400	
+""		Kreuzberg											
+1739	11	Pankow	Pankow	Brehmestr. / Parkstr. / Hadlichstr.		M	W	2,0	800	W	2,0	1.300	
+1795	23,24,31	Tempelhof-	Schöneberg	Cranachstr. / Beckerstr. / Grazer Damm		M	W	2,0	900	W	2,0	1.400	
+""		Schöneberg											
+1782	11/17	Mitte	Gesundbrunnen	Swinemünder Str . / Stralsunder Str .		E	W	2 0 ,	900	W	2 0 ,	1 800 .	Änderung der BRW-Zone
+1776	17/24	Friedrichshain-	Kreuzberg	Schöneberger Ufer / Lindenstr.		M/E	W	2,0	1.000	W	2,0	2.000	
+1376		Kreuzberg											
+2293	17/24	Friedrichshain-	Kreuzberg	Wassertorstr./Oranienstr./Alexandrinenstr.		M/E	W	2,0	1.000	W	2,0	2.000	
+""		Kreuzberg											
+2307	11	Pankow	Prenzlauer Berg	südl. Wisbeyer Str./ Humannplatz			W	2,0	1.000	W	2,0	2.000	
+1788	24	Friedrichshain-	Kreuzberg	westl. Mehringdamm / südl. des Kreuzbergs		E/M	W	2,0	1.000	W	2,0	2.000	
+""		Kreuzberg											
+1596	17/18	Friedrichshain-	Friedrichshain	Singerstr. / Andreasstr.		M	W	2,0	1.000	W	2,0	1.800	
+""		Kreuzberg											
+1579	17	Pankow	Prenzlauer Berg	Mendelssohnstr.		M	W	2,0	1.000	W	2,0	1.800	
+2106	23/30	Steglitz-Zehlendorf	Steglitz	Schildhornstr . / Lepsiusstr . / Holsteinische		M/G	W	2 0 ,	1 100 .	W	2 0 ,	0	BRW-Zone wird aufgeteilt und
+""				Str . / Deitmer Str . / Bismarckstr . / Albrechtstr .									entfällt, siehe BRW-Zonen 2398 und
+""				/ Birkbuschstr. / Steglitzer Damm									2399
+1825	23/24	Tempelhof -	Schöneberg	Friedrich-Wilhelm-Platz / Rheinstr./ Hauptstr.		G	W	2,0	1.200	W	2,0	2.100	Änderung der BRW-Zone
+""		Schöneberg		/ Rubensstr.									
+1803	23	Charlottenburg-	Wilmersdorf	Brabanter Str. / Mannheimer Str.		G/M	W	2,0	1.300	W	2,0	2.100	
+""		Wilmersdorf											
+1813		23	Charlottenburg-	Wilmersdorf	Rüdesheimer Str. / Aßmannshauser Str.	G	W	2,0	1.300	W	2,0	2.200	
+""			Wilmersdorf										
+1816		23	Charlottenburg-	Grunewald	um Rathenauplatz	G	W	2,0	1.300	W	2,0	2.100	
+""			Wilmersdorf										
+1822		23	Charlottenburg-	Schmargendorf	Friedrichsruher Str. / Salzbrunner Str./	M	W	2,0	1.300	W	2,0	2.100	
+""			Wilmersdorf		Eisenzahnstr.								
+GFZ	2,5												
+2409		17	Mitte	Moabit	Joachim Karnatz Allee - -		W	2 5 ,	0	W	2 5 ,	4 000 .	neue BRW-Zone, vorher 2190
+2401		16/17	Mitte	Moabit	nördl .Levetzowstr., Elberfelder Str.		W	2,5	0	W	2,5	1.800	neue BRW-Zone, vorher 1849
+2400			Mitte	Moabit	westl . Beusselstr ., Rostocker Str .		W	2 5 ,	0	W	2 5 ,	1 400 .	neue BRW-Zone, vorher 1849
+2413		17	Mitte	Mitte	östl . Hausvogteiplatz , nördl . Spittelmarkt		W	2 5 ,	0	W	2 5 ,	8 000 .	neue BRW-Zone, vorher teilw. 2179
+""													und 1103
+1834		15	Spandau	Spandau	Jüdenstr.	E	W	2,5	750	W	2,5	1.200	
+1832		10/11/17	Mitte	Wedding	Glasgower Str . / Schulstr. / Pankstr./	E	W	2,5	750	W	2,5	1.200	Änderung der BRW-Zone
+""					Gerichtstr. / Sprengelstr. / Ravenéstr.								
+1837		15	Spandau	Spandau	Lindenufer	E	W	2,5	750	W	2,5	1.200	
+1749		18/25	Friedrichshain-	Friedrichshain	Stralauer Allee / Lehmbruckstr.	E	W	2,5	900	W	2,5	1.800	
+""			Kreuzberg										
+1828		24/25	Neukölln	Neukölln	Hermannstr. / Flughafenstr. / Sonnenallee /	E	W	2,5	900	W	2,5	1.800	
+""					Emser Str.								
+1846		16	Mitte	Moabit	Huttenstr. / Ufnaustr.	E	W	2,5	900	W	2,5	1.300	
+1875		16	Charlottenburg-	Charlottenburg	Helmholtzstr. / Hallerstr.	E	W	2,5	1.000	W	2,5	1.800	
+""			Wilmersdorf										
+2184	17/18	Friedrichshain-	Friedrichshain	Strausbergerstr. / Friedenstr. / Schulweg	M	W	2,5	1.000	W	2,5	1.800	
+""		Kreuzberg										
+1858	17	Mitte	Moabit	Alt-Moabit / Melanchthonstr.	M	W	2,5	1.000	W	2,5	1.800	
+1849	16/17	Mitte	Moabit	Turmstr . / Perleberger Str .	E	W	2 5 ,	1 000 .	W	2 5 ,	1 .600	Änderung der BRW-Zone, s. 2400,
+""												2401 und 1794/1038
+1840	17/24/25	Friedrichshain-	Kreuzberg	Wrangelstr. / Reichenberger Str.	E	W	2,5	1.100	W	2,5	2.200	
+""		Kreuzberg										
+1862	16	Charlottenburg-	Charlottenburg	Tegeler Weg / Mierendorffstr.	E/M	W	2,5	1.100	W	2,5	2.000	
+""		Wilmersdorf										
+1852	24	Friedrichshain-	Kreuzberg	Dudenstr.	E	W	2,5	1.100	W	2,5	1.800	
+""		Kreuzberg										
+2308	17/18	Pankow	Prenzlauer Berg	westl. Greifswalder Str./ Rietzestraße		W	2,5	1.200	W	2,5	2.400	
+1289	17/24	Friedrichshain-	Kreuzberg	südl. Waldemarstr. / Naunynstr.	E	W	2,5	1.200	W	2,5	2.400	
+""		Kreuzberg										
+1843	24	Friedrichshain-	Kreuzberg	Gneisenaustr. / Urbanstr.	E/M	W	2,5	1.200	W	2,5	2.500	
+""		Kreuzberg										
+1771	11,17	Pankow	Prenzlauer Berg	Wichertstr. / Zelterstr.	E	W	2,5	1.200	W	2,5	2.400	
+1867	17/24	Mitte	Tiergarten	Lützowstr. / Kurfürstenstr. / Potsdamer Str.	M/E	W	2,5	1.200	W	2,5	2.500	
+1053												
+1866	24	Tempelhof-	Tempelhof	Dudenstr. / Bayernring	M/G	W	2,5	1.200	W	2,5	2.000	
+""		Schöneberg										
+2310	11	Pankow	Prenzlauer Berg	nördl . des S Bahnringes - , Schievelbeiner		W	2 5 ,	1 400 .	W	2 5 ,	2 500 .	Änderung der BRW-Zone
+""				Straße								
+1856	16	Mitte	Hansaviertel	Spreebogen (Levetzowstr.)	M	W	2,5	1.400	W	2,5	2.500	
+2294	18	Friedrichshain-	Friedrichshain	südl. Frankfurter Allee/Boxhagener Platz	E/M	W	2,5	1.500	W	2,5	3.000	
+1878	24	Tempelhof-	Schöneberg	Eisenacher Str. / Belziger Str .			M/G/E	W	2 5 ,		1 500 .		W	2 5 ,		2 500 .		Änderung der BRW-Zone
+""		Schöneberg																
+2309	11/17	Pankow	Prenzlauer Berg	südl. des S-Bahnringes, Kopenhagener				W	2,5		1.500		W	2,5		3.000		
+""				Straße														
+2223	18	Friedrichshain-	Friedrichshain	nördl. Frankfurter Allee/Samariterplatz			E/M	W	2,5		1.500		W	2,5		3.000		
+""		Kreuzberg																
+1794	17	Mitte	Mitte	Chausseestr . / Habersaathstr .	/ Wohlertstr .		E	W	2 5 ,		1 500 .		W	2 5 ,		3 000 .		Änderung der BRW-Zone, s. 1849
+1038																		
+1872	16	Charlottenburg-	Charlottenburg	nördl. Kaiserdamm / Bismarckstr. bis			M/G	W	2,5		1.700		W	2,5		3.000		
+""		Wilmersdorf		Spandauer Damm / Spree														
+1880	17	Mitte	Tiergarten	Klingelhöfer Str. / Schillstr. / Kurfürstenstr. /			G	W	2,5		1.700		W	2,5		2.700		
+1115				Wichmannstr. / Landgrafenstr.														
+2065	17	Mitte	Mitte	Köpenicker Straße / Schulze-Delitzsch-Platz			M	W	2 5 ,		2 .000		W	2,5		3.500		Änderung der BRW-Zone
+1787	17/18	Pankow	Prenzlauer Berg	Fröbelstr. / Diesterweg / Chodowieckistr. /			E/M	W	2,5		2.100		W	2,5		3.500		
+""				Arnswalder Platz														
+2392	11/17	Pankow	Prenzlauer Berg	Lychener Str./ Stargarder Str.				W	2,5		2.100		W	2,5		3.500		
+1883	16	Charlottenburg-	Charlottenburg	südl. Bismarckstr. bis S-Bahn			G/M	W	2,5		2.100		W	2,5		4.000		
+""		Wilmersdorf																
+1888	23	Charlottenburg-	Wilmersdorf	Westfälische Str. / Brandenburgische Str. /			G	W	2,5		2.200		W	2,5		3.500		
+""		Wilmersdorf		Güntzelstr. / Hildegardstr.														
+2066	23	Charlottenburg-	Wilmersdorf	Karlsruher Straße / Lewishamstr. / nördlich			G	W	2,5		2.200		W	2,5		3.500		
+""		Wilmersdorf		Kudamm														
+1891	23,24	Tempelhof-	Schöneberg	Bayerischer Platz / Viktoria-Luise-Platz /			G	W	2,5		2.200		W	2,5		3.500		
+""		Schöneberg		Berchtesgadener Str.														
+2367	17	Pankow	Prenzlauer Berg	Oderberger Str. / Teutoburger Platz				W	2,5		2.400		W	2,5		4.000		
+1783	17	Pankow	Prenzlauer Berg	Hagenauer Str. / Wörther Str.			G	W	2,5		2.400		W	2,5		4.000		
+2235		17	Mitte	Mitte	nördl. Torstr. / südl. Bernauer Str.	E/M	W	2,5	2.500	W	2,5	4.000	
+1892		16/23	Charlottenburg-	Charlottenburg	beiders. Lietzensee	G	W	2,5	2.700	W	2,5	4.300	
+""			Wilmersdorf										
+2222		17	Mitte	Mitte	Auguststr. / Alte Schönhauser Str./Rosa-	M/E	W	2,5	3.100	W	2,5	5.000	
+""					Luxemburg-Platz								
+GFZ	2,7												
+2061		9	Spandau	Hakenfelde	von Rauchstraße bis Havelspitze	E	W	2,7	750	W	2,7	1.200	
+GFZ	3,0												
+1900		24	Tempelhof-	Schöneberg	Ebersstr. / Kärntener Str.	M	W	3,0	1.200	W	3,0	2.000	
+""			Schöneberg										
+1895		24	Tempelhof-	Schöneberg	Leberstr. / Hohenfriedbergstr. / Schöneberger	E	W	3,0	1.200	W	3,0	2.000	
+""			Schöneberg		Insel								
+GFZ	4,5												
+1810		17	Mitte	Mitte	Leipziger Str .	M	W	4 5 ,	2 600 .	W	4 5 ,	5 200 .	Änderung der BRW-Zone
