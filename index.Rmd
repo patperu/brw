@@ -120,6 +120,39 @@ head(dat, 2) %>% knitr::kable()
 
 ```
 
+# Zuordnung der Wohnlage im Jahr 2017
+
+```{r}
+
+wl_gr <- c("M", "E", "G", "E/M", "M/E", "G/M", "G/E", "M/G", "E/G")
+
+match_WL <- function(x, y) { 
+                      z <- sum(match(c(x,y), wl_gr), na.rm = TRUE)
+                      z <- ifelse(z == 0, NA, z)
+                      z }
+
+wl <- readr::read_tsv("tabula-brw-liste-geschlossene-bauweise-2017.tsv", 
+                      col_names = FALSE, skip= 1) %>%
+        select(X1, X6, X7) %>%
+        filter(!is.na(X1), X1 != "GFZ") %>%
+        purrr::set_names(c("spatial_al", "WL_A", "WL_B")) %>%  
+        mutate(spatial_al = as.numeric(spatial_al)) %>%  
+        rowwise() %>%
+        mutate(Wohnlage = match_WL(WL_A, WL_B),
+               Wohnlage = wl_gr[Wohnlage]) %>%
+        select(spatial_al, Wohnlage) %>%
+        arrange(spatial_al)
+
+dat <- left_join(dat, wl, by="spatial_al")
+
+```
+
+```{r}
+
+table(dat$GFZ, dat$Wohnlage) %>% knitr::kable()
+
+```
+
 ```{r save_rds}
 
 saveRDS(dat, file = "brw_data.rds")
