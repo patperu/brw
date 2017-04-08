@@ -122,7 +122,7 @@ head(dat, 2) %>% knitr::kable()
 
 ```{r save_rds}
 
-saveRDS(dat, file = "brw_data.rdata")
+saveRDS(dat, file = "brw_data.rds")
 
 ```
 
