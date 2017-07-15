@@ -30,6 +30,7 @@ suppressPackageStartupMessages(library("viridis"))
 library("tibble")
 library("scales")
 library("sf")
+library("ggjoy")
 
 knitr::opts_chunk$set(echo = TRUE)
 
@@ -82,7 +83,8 @@ read_brw <- function() {
                      st_read(file, 
                              quiet = TRUE, 
                              stringsAsFactors = FALSE, 
-                             options = "ENCODING=UTF-8") %>% 
+                             #options = "ENCODING=UTF-8"
+                             ) %>% 
                      select(spatial_al, spatial_ty, BEZIRK, BRW, 
                             NUTZUNG, STICHTAG, GFZ, BEITRAGSZU, geometry) %>% 
                      mutate(BRW = as.integer(BRW), 
@@ -115,8 +117,6 @@ dat <- do.call("rbind", dat)
 class(dat)
 
 glimpse(dat, width = 110)
-
-head(dat, 2) %>% knitr::kable()
 
 ```
 
@@ -237,7 +237,8 @@ p1
 brw <- st_read("./data/brw2017.shp", 
                quiet = TRUE, 
                stringsAsFactors = FALSE,
-               options = "ENCODING=UTF-8") %>%
+               #options = "ENCODING=UTF-8"
+               ) %>%
        filter(BRW <= 8000)
 
 pal <- colorNumeric(
@@ -305,6 +306,23 @@ brw_violin <- ggplot(p1, aes(x=factor(year), y=BRW, fill=factor(year))) +
                    caption="Quelle: FIS-Broker / Gutachterausschuss für Grundstückswerte in Berlin")
 
 brw_violin
+
+```
+
+# Joyplot
+
+```{r joyplot}
+
+brw_joyplot <- ggplot(p1, aes(x = BRW, y = factor(year))) + 
+               geom_joy(scale = 3, rel_min_height = 0.01) + 
+               theme_joy(font_size = 11, grid = TRUE) +
+               labs(x="Bodenrichtwert (€)",
+                    y="year",
+                    title="Verteilung der Bodenrichtwerte (W-Wohngebiet) nach ausgewählter GFZ",
+                    subtitle="Nominal prices (2002 - 2017)",
+                    caption="Quelle: FIS-Broker / Gutachterausschuss für Grundstückswerte in Berlin")
+
+brw_joyplot
 
 ```
 
