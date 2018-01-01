@@ -30,7 +30,7 @@ suppressPackageStartupMessages(library("viridis"))
 library("tibble")
 library("scales")
 library("sf")
-library("ggjoy")
+library("ggridges")
 
 knitr::opts_chunk$set(echo = TRUE)
 
@@ -309,20 +309,20 @@ brw_violin
 
 ```
 
-# Joyplot
+# Ridgeline plot
 
 ```{r joyplot}
 
-brw_joyplot <- ggplot(p1, aes(x = BRW, y = factor(year))) + 
-               geom_joy(scale = 3, rel_min_height = 0.01) + 
-               theme_joy(font_size = 11, grid = TRUE) +
-               labs(x="Bodenrichtwert (€)",
-                    y="year",
-                    title="Verteilung der Bodenrichtwerte (W-Wohngebiet) nach ausgewählter GFZ",
-                    subtitle="Nominal prices (2002 - 2017)",
-                    caption="Quelle: FIS-Broker / Gutachterausschuss für Grundstückswerte in Berlin")
+brw_ridgeline <- ggplot(p1, aes(x = BRW, y = factor(year))) + 
+                 geom_density_ridges(scale = 3, rel_min_height = 0.01) + 
+                 theme_ridges(font_size = 11, grid = TRUE) +
+                 labs(x="Bodenrichtwert (€)",
+                      y="year",
+                      title="Verteilung der Bodenrichtwerte (W-Wohngebiet) nach ausgewählter GFZ",
+                      subtitle="Nominal prices (2002 - 2017)",
+                      caption="Quelle: FIS-Broker / Gutachterausschuss für Grundstückswerte in Berlin")
 
-brw_joyplot
+brw_ridgeline
 
 ```
 
