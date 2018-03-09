@@ -1,5 +1,5 @@
 ---
-title: "Entwicklung der Bodenrichtwerte in Berlin (2002 - 2017)"
+title: "Entwicklung der Bodenrichtwerte in Berlin (2002 - 2018)"
 author: "Patrick Hausmann"
 date: "`r Sys.Date()`"
 output:
@@ -14,7 +14,7 @@ output:
 
 # Einleitung
 
-Die Daten stammen aus dem [FIS-Broker](http://www.stadtentwicklung.berlin.de/geoinformation/fis-broker/) der Senatsverwaltung für Stadtentwicklung und Wohnen. Für die Jahre 2009 und 2010 fehlen aktuell die Attribute.
+Die Daten stammen aus dem [FIS-Broker](http://www.stadtentwicklung.berlin.de/geoinformation/fis-broker/) der Senatsverwaltung für Stadtentwicklung und Wohnen.
 
 Zur Arbeit mit dem FIS-Broker siehe auch den Vortrag ["Daten aus dem FIS-Broker"](https://jochenklar.de/files/talks/odd-2017/#1) von Jochen Klar zum ODD 2017 in Berlin.
 
@@ -22,83 +22,115 @@ Zur Arbeit mit dem FIS-Broker siehe auch den Vortrag ["Daten aus dem FIS-Broker"
 
 ```{r setup, include = TRUE}
 
-library("gdalUtils")
-library("sp")
-library("ggplot2")
-suppressPackageStartupMessages(library("rgdal"))
-suppressPackageStartupMessages(library("dplyr"))
-library("leaflet")
-library("viridis")
-library("scales")
+library(gdalUtils)
+library(ggplot2)
+suppressPackageStartupMessages(library(dplyr))
+library(leaflet)
+suppressPackageStartupMessages(library(viridis))
+library(tibble)
+library(scales)
+library(sf)
+library(purrr)
+library(glue)
+library(ggridges)
 
 knitr::opts_chunk$set(echo = TRUE)
-```
 
-```{r }
-
-read_brw <- function(year) {
-
-  dsn  <- paste0("WFS:http://fbinter.stadt-berlin.de/fb/wfs/geometry/senstadt/re_brw", year)
-  dest <- paste0("./data/brw", year, ".shp")
-  fis  <- paste0("fis:re_brw", year)
-   
-  ogr2ogr(s_srs = "EPSG:25833", 
-          t_srs = "WGS84", 
-          f = "ESRI Shapefile", 
-          dsn, 
-          dest, 
-          fis,
-          overwrite = TRUE)
-
-}
-
-read_shp <- function(x) {
-
-  a1 <- paste0("./data/brw", x, ".shp")
-  a2 <- paste0("brw", x)
-  z <- readOGR(a1, a2, stringsAsFactors = FALSE)
-  z@data
-}
+options(width = 140, stringsAsFactors = FALSE)
 
 ```
 
-# Download der WFS Datensätze
+# 
 
-```{r, eval = FALSE}
+```{r get_xml, eval = TRUE}
 
-Map(read_brw, 2002:2017)
+dat <- purrr::map(2002:2018, ~{
+        Sys.sleep(2)
+        url <- glue::glue("http://fbinter.stadt-berlin.de/fb/wfs/geometry/senstadt/re_brw{.}?service=wfs&version=2.0.0&request=GetFeature&TYPENAMES=re_brw{.}&outputFormat=application/geo%2Bjson")
+        sf::read_sf(url) %>% sf::st_transform(., 4326)
+  })
+
+saveRDS(dat, file = "./data/brwdata.rds")
 
 ```
-
-# Import der Attributdaten
 
 ```{r}
 
-dat <- Map(read_shp, 2002:2017) %>%
-       bind_rows() %>%
-       readr::type_convert() %>%
-       mutate(year = as.numeric(format(STICHTAG, "%Y"))) %>%
-       arrange(spatial_na, year)
+dat <- purrr::map(dat, function(year) { 
+           year %>%
+            filter(id != "0", BEZIRK != "") %>%
+            select(id, BEZIRK, BRW, 
+                   NUTZUNG, STICHTAG, GFZ, BEITRAGSZUSTAND, geometry) %>% 
+            mutate(id = as.integer(id),
+                   BRW = as.integer(BRW), 
+                   GFZ = as.numeric(GFZ),
+                   STICHTAG = as.Date(STICHTAG),
+                   year = as.numeric(format(as.Date(STICHTAG), "%Y")))
+          })
 
-glimpse(dat)
+dat <- do.call("rbind", dat)
+
+dat <- dat %>% arrange(id, year)
+
+class(dat)
+
+glimpse(dat, width = 110)
 
 ```
 
-# Anzahl der Werte nach Bezirken
+# Zuordnung der Wohnlage im Jahr 2017
+
+```{r}
+
+wl_gr <- c("M", "E", "G", "E/M", "M/E", "G/M", "G/E", "M/G", "E/G")
+
+match_WL <- function(x, y) { 
+                      z <- sum(match(c(x,y), wl_gr), na.rm = TRUE)
+                      z <- ifelse(z == 0, NA, z)
+                      z }
+
+wl <- readr::read_tsv("tabula-brw-liste-geschlossene-bauweise-2017.tsv", 
+                      col_names = FALSE, skip= 1) %>%
+        select(X1, X6, X7) %>%
+        filter(!is.na(X1), X1 != "GFZ") %>%
+        purrr::set_names(c("id", "WL_A", "WL_B")) %>%  
+        mutate(id = as.numeric(id)) %>%  
+        rowwise() %>%
+        mutate(Wohnlage = match_WL(WL_A, WL_B),
+               Wohnlage = wl_gr[Wohnlage]) %>%
+        select(id, Wohnlage) %>%
+        arrange(id)
+
+dat <- left_join(dat, wl, by = "id")
+
+```
+
+```{r}
+
+table(dat$GFZ, dat$Wohnlage) %>% knitr::kable()
+
+```
+
+# Anzahl der Bodenrichtwertzonen nach Bezirken
 
 ```{r}
   table(dat$BEZIRK, dat$year) %>% knitr::kable()
 ```
 
-# Anzahl der Werte nach Art der Nutzung
+# Anzahl der Bodenrichtwertzonen nach Art der Nutzung
 
 ```{r}
  table(dat$NUTZUNG, dat$year) %>% knitr::kable()
 ```
 
-```{r}
+# Berechnung von Kennzahlen
 
-z <- dat %>% 
+```{r eval = TRUE}
+
+# https://github.com/r-spatial/sf/issues/518
+dat <- dat %>% st_buffer(0)
+
+z <- tbl_df(dat) %>% 
         group_by(BEZIRK, NUTZUNG, GFZ, year) %>% 
         summarise(count = n(),
                   q25 = quantile(BRW, 0.25, na.rm = TRUE),
@@ -106,8 +138,7 @@ z <- dat %>%
                   q95 = quantile(BRW, 0.95, na.rm = TRUE),
                   iqr = IQR(BRW, na.rm = TRUE),
                   mean = mean(BRW, na.rm = TRUE),
-                  med = median(BRW, na.rm = TRUE))  %>%
-        filter(!is.na(BEZIRK)) %>%
+                  med = median(BRW, na.rm = TRUE)) %>%
         ungroup()
 
 ```
@@ -116,18 +147,18 @@ z <- dat %>%
 
 ```{r, fig.height=10, fig.width=12}
 
-p0 <- ggplot(filter(z, year >= 2011, NUTZUNG == "W - Wohngebiet"),
-       aes(year, mean, colour = "BEZIRK", group = "BEZIRK"))
-p0 <- p0 + geom_line()
-p0 <- p0 + facet_grid(as.factor(GFZ) ~ BEZIRK, scales = "free")
-p0 <- p0 + theme(axis.text.x  = element_text(angle=90, vjust=0.5, size = 8),
-                 axis.text.y  = element_text(size = 8), 
-                 legend.position="none")
-p0 <- p0 + labs(x = "",
-                y = "Durchschnitt in  €",
-                title = "Bodenrichtwerte in der Nutzung 'W - Wohngebiet' (2011-2017)",
-                subtitle = "",
-                caption = "Quelle: FIS-Broker / Gutachterausschuss für Grundstückswerte in Berlin")
+p0 <- ggplot(filter(z, year >= 2008, NUTZUNG == "W - Wohngebiet"),
+       aes(factor(year), mean, colour = "BEZIRK", group = "BEZIRK")) +
+      geom_line() +
+      facet_grid(factor(GFZ) ~ BEZIRK, scales = "free") +
+      theme(axis.text.x  = element_text(angle=90, vjust=0.5, size = 8),
+            axis.text.y  = element_text(size = 8), 
+            legend.position="none") +
+      labs(x = "",
+           y = "Durchschnitt in  €",
+           title = "Bodenrichtwerte in der Nutzung 'W - Wohngebiet' (2008-2018)",
+           subtitle = "",
+           caption = "Quelle: FIS-Broker / Gutachterausschuss für Grundstückswerte in Berlin")
 p0
 
 ```
@@ -136,42 +167,40 @@ p0
 
 ```{r, fig.height=10, fig.width=12}
 
-p1 <- ggplot(filter(z, year >= 2011, NUTZUNG == "M2 - Mischgebiet"),
-       aes(year, mean, colour = "BEZIRK", group = "BEZIRK"))
-p1 <- p1 + geom_line()
-p1 <- p1 + facet_grid(as.factor(GFZ) ~ BEZIRK, scales = "free")
-p1 <- p1 + theme(axis.text.x  = element_text(angle=90, vjust=0.5, size = 8),
-                 axis.text.y  = element_text(size = 8),
-                 legend.position="none")
-p1 <- p1 + labs(x = "",
-                y = "Durchschnitt in €",
-                title = "Bodenrichtwerte in der Nutzung 'M2 - Mischgebiet' (2011-2017)",
-                subtitle = "",
-                caption = "Quelle: FIS-Broker / Gutachterausschuss für Grundstückswerte in Berlin")
+p1 <- ggplot(filter(z, year >= 2008, NUTZUNG == "M2 - Mischgebiet"),
+       aes(factor(year), mean, colour = "BEZIRK", group = "BEZIRK")) +
+      geom_line() +
+      facet_grid(factor(GFZ) ~ BEZIRK, scales = "free") +
+      theme(axis.text.x  = element_text(angle=90, vjust=0.5, size = 8),
+            axis.text.y  = element_text(size = 8),
+            legend.position="none") +
+      labs(x = "",
+           y = "Durchschnitt in €",
+           title = "Bodenrichtwerte in der Nutzung 'M2 - Mischgebiet' (2008-2018)",
+           subtitle = "",
+           caption = "Quelle: FIS-Broker / Gutachterausschuss für Grundstückswerte in Berlin")
 p1
+
 ```
 
-# Karte der Bodenrichtwerte im Jahr 2017 (BRW <= 8.000 €)
+# Karte der Bodenrichtwerte im Jahr 2018 - BRW <= 8.000
 
-```{r fig.height=15, fig.width=15}
+```{r fig.height=15, fig.width=15, eval = TRUE}
 
-brw <- readOGR("./data/brw2017.shp", "brw2017", 
-               stringsAsFactors = FALSE, 
-               encoding = "UTF-8")
-
-brw <- brw[brw$BRW <= 8000, ]
+brw <- dat %>%
+       filter(year == 2018, BRW <= 8000)
 
 pal <- colorNumeric(
   palette = viridis_pal()(10),
-  domain = brw@data$BRW
+  domain = brw$BRW
 )
 
-popup <- paste0("<b>", brw@data$spatial_al, " - ",
-                       brw@data$NUTZUNG , " - ",
-                       brw@data$GFZ, " - ", 
-                       brw@data$BRW, " Euro/qm")
+popup <- paste0("<b>", brw$id, " - ",
+                       brw$NUTZUNG , " - ",
+                       brw$GFZ, " - ", 
+                       brw$BRW, " Euro/qm")
 
-leafMap <- leaflet(height = "800px", width = "800px") %>%
+leafMap <- leaflet(height = "800px", width = "1000px") %>%
   setView(lng = 13.383, lat = 52.516, zoom = 11) %>%
   addProviderTiles(providers$CartoDB.Positron) %>%
   addPolygons(data = brw,
@@ -181,18 +210,18 @@ leafMap <- leaflet(height = "800px", width = "800px") %>%
               color = "white",
               smoothFactor = 0.20,
               fillOpacity = 0.60,
-              fillColor = ~pal(brw@data$BRW),
+              fillColor = ~pal(brw$BRW),
+              highlightOptions = highlightOptions(color = "steelblue", 
+                                                  weight = 4,
+                                                  bringToFront = FALSE),
               popup = popup,
               group = "Bodenrichtwerte") %>%
   addLegend("bottomright",
             pal = pal,
-            values = brw@data$BRW,
+            values = brw$BRW,
             title = "Euro/qm",
             labFormat = labelFormat(suffix = " "),
             opacity = 1)
-```
-
-```{r}
 
 leafMap
 
@@ -200,7 +229,7 @@ leafMap
 
 # Verteilung der BRW nach GFZ
 
-Vorlage der Grafik ist [Mapping San Francisco home prices using R](http://urbanspatialanalysis.com/dataviz-tutorial-mapping-san-francisco-home-prices-using-r/ Grafik)
+Vorlage der Grafik ist [Mapping San Francisco home prices using R](http://urbanspatialanalysis.com/dataviz-tutorial-mapping-san-francisco-home-prices-using-r/)
 
 WIP!
 
@@ -208,7 +237,7 @@ WIP!
 
 p1 <- filter(dat, 
              NUTZUNG == "W - Wohngebiet", 
-             GFZ %in% c(0.4, 1, 1.2, 2.5) )
+             GFZ %in% c(0.2, 0.4, 0.6, 1, 1.2, 2.0, 2.5) )
 
 p1 <- p1[which(p1$BRW < mean(p1$BRW) + (2.5 * sd(p1$BRW))), ]
 
@@ -219,19 +248,39 @@ brw_violin <- ggplot(p1, aes(x=factor(year), y=BRW, fill=factor(year))) +
               facet_wrap( ~ GFZ, ncol = 2, scales = "free") + 
               theme(legend.position="none") +
               scale_y_continuous(labels = comma) +
-              labs(x="Jahr (2009+2010 fehlen!)",
+              labs(x="",
                    y="Bodenrichtwert(€)",
                    title="Verteilung der Bodenrichtwerte (W-Wohngebiet) nach ausgewählter GFZ",
-                   subtitle="Nominal prices (2006 - 2017); BRW means visualized as points, median in red",
+                   subtitle="Nominal prices (2002 - 2018); BRW means visualized as points, median in red",
                    caption="Quelle: FIS-Broker / Gutachterausschuss für Grundstückswerte in Berlin")
 
 brw_violin
 
 ```
 
+# Ridgeline plot
+
+```{r ridgeline}
+
+p2 <- dplyr::filter(dat, NUTZUNG == "W - Wohngebiet", BRW <= 3000)
+
+brw_ridgeline <- ggplot(p2, aes(x = BRW, y = factor(year))) + 
+                 geom_density_ridges(scale = 3, rel_min_height = 0.01) + 
+                 theme_ridges(font_size = 11, grid = TRUE) +
+                 labs(x="Bodenrichtwert (€)",
+                      y="year",
+                      title="Verteilung der Bodenrichtwerte (W-Wohngebiet), BRW <= 3000",
+                      subtitle="Nominal prices (2002 - 2018)",
+                      caption="Quelle: FIS-Broker / Gutachterausschuss für Grundstückswerte in Berlin")
+
+brw_ridgeline
+
+```
+
 # Session Info
 
 ```{r}
-devtools::session_info()
-```
 
+devtools::session_info()
+
+```
